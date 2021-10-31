@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  <script defer src="./login.js"></script>
+  <script defer src="./quotes.js"></script>
+  <script defer src="./clock.js"></script>
+  <script defer src="./background.js"></script>
+  <script defer src="./todo.js"></script>
+  <script defer src="./weather.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+
+
+  <div class="wrap">
+ <div class="nav">
+    <button class="bu"><i class="fas fa-bars"></i></button>
+ <ul class="uu">
+   <li><a href="https://www.google.com" target="_blank"><img src="./img/goo.png" alt="" style="width:50%" ></a></li>
+   <li><a href="https://www.youtube.com/" target="_blank"><img src="./img/you.png" alt=""  style="width:50%"></a></li>
+   <li><a href="https://www.naver.com/" target="_blank"><img src="./img/naver.png" alt=""  style="width:50%"></a></li>
+ </ul>
+</div>
+
+
+  <h2 id="clock"  class="middle" >00:00</h2>
+  <p id="christcount" class="middle">Christmas Count <i class="fas fa-caret-down"></i></p>
+  <h2 id="count" class="middle">00:00</h2>
+
+
+  <form class="hidden nwrap" id="login-form">
+  <input required maxlength="10" type="text"  placeholder="What is your name?" class="nametax" >
+  <input type="submit" value="Log in" class="enter" >
+  </form>
+  <h1 class="hidden" id="greeting" ></h1>
+  
+
+  <form id="todo-form"  class="middle">
+    <input type="text" placeholder="Write a To Do and Press Enter"  class="middle tdf">
+  </form>
+  <ul id = "todo-list"  class="middle"></ul>
+
+
+  <div id = "quote"  class="middle">
+    <span></span> <br>
+    <span></span>
+  </div>
+
+ <div id="weather">
+   
+  <i class="fas fa-temperature-high"> &nbsp;
+    <span></span>
+    <span></span></i> 
+ 
+
+ </div>
+
+</div>
+
+</body>
+</html>
