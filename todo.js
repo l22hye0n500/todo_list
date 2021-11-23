@@ -78,3 +78,54 @@ if (savedToDos !== null){
 $( 'button.bu' ).click( function() {
   $( '.uu' ).slideToggle();
 } );
+
+
+
+
+// const day = document.querySelector(".day")
+// const night = document.querySelector(".night")
+// const wrap = document.querySelector(".wrap")
+// const left = document.querySelector(".left")
+// const namet = document.querySelector(".nametax")
+// const greer = document.querySelector("#greeting")
+// const cloc = document.querySelector("#clock")
+// const leftspan = document.querySelector(".left span:nth-of-type(1)")
+// const leftspan2 = document.querySelector(".left span:nth-of-type(2)")
+// const qut = document.querySelector("#quote")
+// const tl = document.querySelector("#todo-list")
+// const tdf = document.querySelector(".tdf")
+
+
+
+// night.addEventListener('click', function(){
+//  wrap.style.backgroundColor = "#3b4751"
+//  wrap.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  document.body.style.backgroundColor = "#3b4751"
+//  document.body.style.color = "#fff"
+//  left.style.backgroundColor = "#3b4751"
+//  left.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  leftspan.style.boxShadow = "5px 5px 10px #323c45, -5px -5px 10px #44525d "
+//  leftspan2.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  namet.style.backgroundColor = "#3b4751"
+//  namet.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  greer.style.backgroundColor = "#3b4751"
+//  greer.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  cloc.style.backgroundColor = "#3b4751"
+//  cloc.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  cloc.style.color = "#fff"
+//  qut.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  tl.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+//  tdf.style.boxShadow = " 5px 5px 10px #323c45,-5px -5px 10px #44525d "
+
+//  $('.left span').hover(function(){
+//   $(this).css('boxShadow','inset  5px 5px 10px #323c45,inset  -5px -5px 10px #44525d ');
+//   $(this).css('backgroundColor',' #3b4751');
+// }, function() {
+//   $(this).css('boxShadow','5px 5px 10px #323c45,-5px -5px 10px #44525d ');
+//   $(this).css('backgroundColor',' #3b4751');
+// });
+
+// } )
+
+
+

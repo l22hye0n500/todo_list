@@ -10,7 +10,7 @@ function getClock(){
   const s = String(date.getSeconds()).padStart(2,"0");
 
 
-  clock.innerText = `${h}: ${m}: ${s}`
+  clock.innerText = `${h}:${m}:${s}`
 }
 
 function Cl() {

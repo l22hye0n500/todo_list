@@ -1,105 +1,174 @@
-@font-face {
-  font-family: 'SpoqaHanSansNeo-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Nanum+Gothic+Coding&family=Staatliches&display=swap');
 
-
+*{ font-family: 'Staatliches', 'Nanum Gothic Coding';}
 
 
 body {
   height: 900px;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  font-family: 'Pattaya', sans-serif;
-  color: #fff;
+  /* overflow: hidden; */
+  color: #3b4751;
+  background-color: #fee99f;
+ 
 }
 
 
 
-.wrap{ 
 
-  position:absolute ;
+.wrap {
+
+  position: absolute;
   margin: auto;
-  top:2%;
+  top: 2%;
   left: 0;
-  right:0;
+  right: 0;
   bottom: 0;
-  width:80%;
-  height:auto;
-  /* background-color: rgba(255, 255, 255, 0.5); */
+  width: 80%;
+  height: auto;
+  background: #fee99f;
+  box-shadow: 7px 7px 14px #d8c687,
+    -7px -7px 14px #ffffb7;
   border-radius: 30px;
-  
+
+
 }
 
-.middle{
+.middle {
   position: relative;
   text-align: center;
 }
 
 
-li{
-  list-style:none;
-  font-family: 'SpoqaHanSansNeo-Regular'
+li {
+  list-style: none;
 }
 
 
-img{
-width:100%;
-height: 110%;
+img {
+  width: 100%;
+  height: 110%;
 }
 
 
 
-i span{
+i span {
   font-size: 12px;
   position: relative;
-  left:-15px;
+  left: -15px;
 }
 
 
-#clock{
-  font-size:80px;
+#clock {
+  border-radius: 30px;
+  width: 20%;
+  height: 80px;
+  font-size: 2vw;
   top:5%;
+  left: 26%;
+  line-height: 80px;
   z-index: 111;
-  color: rgb(190, 0, 0)!important;
-  text-shadow: -4px 0 #fff, 0 4px #fff, 2px 0 #fff, 0 -1px #fff;
+  background: #fee99f;
+  box-shadow: 7px 7px 14px #d8c687,
+    -7px -7px 14px #ffffb7;
+  font-weight: 900;
 }
 
 #count{
   font-size: 18px;
   display: none;
-  font-family: 'SpoqaHanSansNeo-Regular';
+
   
 }
 
 #christcount{
   font-size: 18px;
-  font-family: 'SpoqaHanSansNeo-Regular';
   cursor: pointer;
+  display: none;
 
 }
 
 
 
 #login-form{
-position: relative; 
+position: absolute; 
 text-align: center;
+top:0%;
+border-radius: 25px;
+height:100%;
+width:250px;
+background: #fee99f;
+box-shadow:  6px 6px 12px #d8c687,
+             -6px -6px 12px #ffffb7;
+z-index: 11111;
 
 }
 
-#greeting{
-position: relative; 
+
+.left{
+  position: absolute; 
 text-align: center;
-color:rgb(0, 110, 59);
-text-shadow: -2px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+top:0%;
+border-radius: 25px;
+height:100%;
+width:250px;
+background: #fee99f;
+box-shadow: 6px 6px 12px #d8c687,
+-6px -6px 12px #ffffb7;
+}
+
+.left span {
+  box-shadow: 6px 6px 12px #d8c687,
+    -6px -6px 12px #ffffb7;
+  width: 60px;
+  height: 60px;
+  display:block;
+  line-height:4.3;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 5%;
+  left:20%;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.left span:hover{
+  background: #fee99f;
+  box-shadow: inset 5px 5px 10px #d8c687,
+              inset -5px -5px 10px #ffffb7;
+  transition: all .5s;
+}
+
+.left span:nth-of-type(2){
+  left:58%;
+}
+
+.left span i {
+  font-size:30px;
+}
+
+#greeting{
+  margin:4%;
+  padding:1%;
+  top:5%!important;
+  left: 10px;
+  position: relative;
+  border:none;
+  background-color:transparent;
+  width: 210px;
+  height:50px;
+  text-align: center;
+  transition: all .3s;
+  font-size: 30px;
+  border-radius: 25px;
+  background: #fee99f;
+  box-shadow:  6px 6px 12px #d8c687,
+  -6px -6px 12px #ffffb7;
+  line-height: 50px;
+  
 }
 
 .enter{
@@ -115,24 +184,33 @@ text-shadow: -2px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 .nametax{
   margin:4%;
   padding:1%;
-  top:8%;
+  top:5%!important;
+  position: relative;
   border:none;
   background-color:transparent;
-  border-bottom: 2px rgba(255, 255, 255, 0.8) solid;
   width: 210px;
+  height:50px;
   text-align: center;
   transition: all .3s;
   font-size: 16px;
- 
+  border-radius: 25px;
+  background: #fee99f;
+  box-shadow:  6px 6px 12px #d8c687,
+  -6px -6px 12px #ffffb7;
+  z-index: 11111;
+  
   
 }
 
 
 .nametax:hover{
-  background-color: rgba(255,255,255,0.3);
+
   transition: all .3s;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  border-radius: 20px;
+  border-radius: 25px;
+  border:1.5px #3b4751 solid;
+background: #fee99f;
+box-shadow: inset 6px 6px 12px #d8c687,
+            inset -6px -6px 12px #ffffb7;
 }
 
 .nametax:focus{
@@ -141,16 +219,20 @@ text-shadow: -2px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 
-#greeting{
-  top:0%;
-}
 
-#todo-form{
-  top:-8%;
-}
+
 
 #todo-list{
-  top:-15%;
+  top:32%;
+  left:27.3%;
+  margin: none;
+  position: absolute;
+  width: 15%;
+  border-radius: 25px;
+  height:400px;
+  box-shadow: inset 6px 6px 12px #d8c687,
+            inset -6px -6px 12px #ffffb7;
+
 }
 
 #todo-list li button {
@@ -159,31 +241,36 @@ text-shadow: -2px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   padding-left: 5%;
   padding-top:5%;
   cursor: point;
+  
 }
 
 
 .tdf{
-
-  margin:4%;
   padding:1%;
   margin-bottom:5%;
   border:none;
   background-color:transparent;
-  border-bottom: 2px rgba(255, 255, 255, 0.8) solid;
   width: 250px;
   text-align: center;
   transition: all .3s;
   font-size: 16px;
+  box-shadow:  6px 6px 12px #d8c687,
+   -6px -6px 12px #ffffb7;
+  border-radius: 20px;
+  left:26.9%;
+  top:25%;
+  position: absolute;
 
 }
 
 
 .tdf:hover{
-  background-color: rgba(255,255,255,0.3);
+  
   transition: all .3s;
-  border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  border-bottom: 2px rgba(255, 255, 255, 0.8) solid;}
+  border-radius: 25px;
+  box-shadow: inset 17px 17px 35px #d8c687,
+  inset -17px -17px 35px #ffffb7;
+  border: 1px #3b4751 solid;}
 
 
 
@@ -194,14 +281,16 @@ text-shadow: -2px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 
 
 #quote{
-  top:-5%;
+ bottom:6%;
+left:29.5%;
   cursor: pointer;
-  font-family: 'SpoqaHanSansNeo-Regular';
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
+  box-shadow:  17px 17px 35px #d8c687,
+  -17px -17px 35px #ffffb7;
+  border-radius: 25px;
   width: 55%!important;
   padding:1%;
-  margin:0 auto
+  position: absolute;
+  text-align: center;
 }
 
 #quote span:last-child{
@@ -212,8 +301,16 @@ text-shadow: -2px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 #weather
 {
 position:absolute;
-right: 0;
-top:0;}
+right: 13%;
+bottom:21%;
+width:20%;
+text-align: center;
+border-radius: 15px;
+height:60px;
+line-height: 2.3;
+box-shadow: inset 5px 5px 13px #e7d491,
+            inset -5px -5px 13px #fffead;
+font-size: 25px!important;}
 
 
 .fas{
@@ -224,21 +321,28 @@ top:0;}
 
 .nav{
   position: relative;
-  top:8%;
+  top:10%;
+  left:67%;
   width:auto;
-
+  width:300px;
 }
 
 
+
 .uu{
-background:rgba(255,255,255,0.4);
-width:11%;
+  left:50%;
+  top:30px!important;
+  transform: translateX(-50%);
+position: absolute;
+width:60%;
 height: 50px;
 padding:1%;
-margin: 0 auto;
 border-radius: 20px;
 display: none;
-text-align: center
+text-align: center;
+background: #fee99f;
+box-shadow:  8px 8px 16px #d8c687,
+             -8px -8px 16px #ffffb7;
 }
 
 
@@ -246,11 +350,11 @@ text-align: center
 
 .uu li {
   padding:0;
-  width:30%;
+  width:25%;
   height:50px;
-  background:#fff;
+  background: #fff;
   text-align: center;
-  border-radius: 30%;
+  border-radius: 25px;
   position: relative;
  display: inline-block;
  box-shadow: rgba(50, 50, 93, 0.4) 0px 10px 30px -12px
@@ -274,14 +378,16 @@ text-align: center
 
 
 .bu{
-  background:transparent;
+background:transparent;
 border:none;
-color:#fff;
+color:#3b4751;
 position: absolute;
-top:-20%;
+top: -0px;
 left:50%;
 transform: translateX(-50%);
 cursor: pointer;
+display: block;
+z-index: 10;
 }
 
 .bu i{
@@ -297,106 +403,236 @@ cursor: pointer;
 
 
 
-@media screen and (max-width:768px) {
-
-  #todo-list{
-    top:5%;
-  }
-
-  .tdf{
-    margin-top:8%;
-  }
-
-  #quote{
-    top:5%;
-  
-  }
-  
-
-  #clock{
-    font-size:50px;
-    top:5%; 
-  }
-  
-
-  .uu{
-
-    padding:3%;
-    width:30%!important;
-  }
-
-  .uu li{
-    width:22%!important;;
-    height:100px;
-  }
-}
-
-
-
-
-
-
-@media screen and (max-width: 1068px) {
-
-  #todo-list{
-    top:5%;
-  }
-
-  .tdf{
-    margin-top:8%;
-  }
-
-  #quote{
-    top:5%;
-  
-  }
-  
-
-  #clock{
-    font-size:50px;
-    top:5%; 
-  }
-  
-
-  .uu{
-
-    padding:3%;
-    width:50%!important;
-  }
-
-  .uu li{
-    width:12%;
-    height:50px;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 1500px) {
-  #todo-list{
-    top:0%;
-  }
-  #todo-form{
-    top:0%;
-  }
-
-  #clock{
-    font-size:80px;
-    top:7%;
-    
-  }
-  
-  #quote{
-    top:5%;}
-
-
-  .uu{
+  #calendar{
     position: relative;
-    top:8%;
-    padding:2%;
-    width:15%;
+    left:67.3%;
+    top:12%;
+    padding:3%;
+    border-radius: 25px;
+    box-shadow:  8px 8px 16px #d8c687,
+             -8px -8px 16px #ffffb7;
+    border-spacing: 10px;
+    font-weight: 900;
+    color:#858796
   }
+
+  #calendar .calentop{
+    position: absolute;
+    top:5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width:46%;
+    text-align: center;
+    font-weight: 900;
+    color: #3b4751;
+  
+  }
+
+  .calenbott
+  {position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  font-weight: 900;
+  color: #3b4751;}
+
+  .calenbott td {
+    text-align: center;
+  }
+
+  .cursor{
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+@media all and (min-width:768px) and (max-width:1250px) { 
+
+.left{
+ top:5%;
+ left:10.5%;
+ border-radius: 25px;
+ height:10%;
+ width:250px;
+ background: transparent;
+ box-shadow: none;
+
 }
 
+#login-form {
+  background: transparent;
+  box-shadow: none;
+}
+
+#greeting {
+  line-height: 55px;
+  font-size:40px;
+}
+
+
+#clock{
+  top:14%;
+  left: 13%;
+  width:25%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 3.5vw;
+}
+
+
+.tdf {
+  left: 13%;
+  top: 28%;
+}
+
+#todo-list {
+  top: 32%;
+  left: 13%;
+  width: 28%;
+  height: 400px;
+}
+
+
+#quote{
+  bottom:6%;
+ left:50%;
+ transform: translateX(-50%);
+   cursor: pointer;
+   box-shadow:  17px 17px 35px #d8c687,
+   -17px -17px 35px #ffffb7;
+   border-radius: 25px;
+   width: 73%!important;
+   padding:1%;
+   position: absolute;
+   text-align: center;
+ }
+
+
+
+ .nav{
+  top:10%;
+  left:53.5%;
+  
+}
+
+
+#calendar{
+  left:57%;
+  top:15.5%
+}
+
+#calendar .calentop{
+  width:51.5%;
+  top:0.5%
+}
+
+
+#weather
+{
+right: 12%;
+bottom:21%;
+width:31%;
+}
+}
+
+@media all and (min-width:480px) and (max-width:767px) { 
+
+.left{
+  top:15%;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  height:10%;
+  width:250px;
+  background: transparent;
+  box-shadow: none;
+ 
+ }
+ 
+ #login-form {
+   background: transparent;
+   box-shadow: none;
+ }
+ 
+ #greeting {
+   line-height:55px;
+   font-size: 40px;
+ }
+ 
+ 
+ #clock{
+  left:50%;
+  transform: translateX(-50%);
+   top:22%;
+   width:50%;
+   height:50px;
+   line-height:50px;
+   font-size: 7vw;
+ }
+ 
+ 
+ .tdf {
+  left:50%;
+  transform: translateX(-50%);
+   top: 35%;
+ }
+ 
+ #todo-list {
+   top: 38%;
+   left:50%;
+  transform: translateX(-50%);
+   width: 55%;
+   height: 400px;
+ }
+ 
+ 
+ #quote{
+   bottom:6%;
+  left:50%;
+  transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow:  17px 17px 35px #d8c687,
+    -17px -17px 35px #ffffb7;
+    border-radius: 25px;
+    width: 73%!important;
+    padding:1%;
+    position: absolute;
+    text-align: center;
+  }
+ 
+ 
+ 
+  .nav{
+   top:3%;
+   left:50%;
+  transform: translateX(-50%);
+   
+ }
+ 
+ 
+ #calendar{
+  display: none;
+ }
+ 
+ #calendar .calentop{
+   width:51.5%;
+   top:0.5%
+ }
+ 
+ 
+ #weather
+ {
+  left:50%;
+  transform: translateX(-50%);
+ bottom:1%;
+ width:50%;
+ height:30px;
+ line-height: 20px;
+ box-shadow: none;
+
+ }
+
+}
